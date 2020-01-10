@@ -1,2 +1,3 @@
 welcome to git hub 
 today i learn how to clone how to work no git project
+i learn how to clone some thing from the github and how to push to the githua
