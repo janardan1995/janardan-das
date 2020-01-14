@@ -21,10 +21,18 @@ namespace FunctionalProgramming
             Console.WriteLine(" 8. Sum of three Integer adds to ZERO");
             Console.WriteLine(" 9.Euclidean distance from the point (x, y) to the origin (0, 0)");
             Console.WriteLine(" 10.Write a program Quadratic.java to find the roots of the equation a*x*x + b*x + c.");
-            Console.WriteLine(" 11.Write a program Distance.java");
-            Console.WriteLine(" 12.Write a program Quadratic.java ");
-            Console.WriteLine(" 13.Write a program WindChill.java ");
-            //Console.WriteLine(" Enter the no from 1 to 6");
+            Console.WriteLine(" 11.Write a program WindChill.java ");
+            Console.WriteLine("12.Gamler game");
+            Console.WriteLine("13.Coupone Number");
+            Console.WriteLine("14.Stop watch");
+            Console.WriteLine("15.Tic Toe Tik");
+            Console.WriteLine("16.Vending Machine");
+            Console.WriteLine("17.dayOfWeeks");
+            Console.WriteLine("18.celcius to Ferhinheit and vic versa");
+            Console.WriteLine("19.Monthly pament");
+            Console.WriteLine("20.Newton method");
+            Console.WriteLine("21.Decimal to binary");
+            Console.WriteLine("22.swap nibble");
 
 
 
@@ -32,7 +40,6 @@ namespace FunctionalProgramming
             switch (str)
             {
                 case 1:
-                    //FunctionalProgramming.StringReplace();
                     StringReplace.Replace();
                     break;
                 case 2:
@@ -53,30 +60,42 @@ namespace FunctionalProgramming
                 case 7:
                     TwoDArray.Two();
                     break;
-                //case 8:
-                //    SumOfThree.Sum();
-                //    break;
+                case 8:
+                    SumOfThree.Sum();
+                    break;
                 case 9:
                     Distance.Dist();
                     break;
                 case 10:
                     Quadratic.Quad();
                     break;
-                //case 11:
-                //    WindChill.Wind();
-                //    break;
-                //case 12:
-                //    Gambler.Game();
-                //    break;
-                //case 13:
-                //    Coupon.Coup();
-                //    break;
-                //case 14:
-                //    StopWatch.Stop();
-                //    break;
-                //case 15:
-                //    TicTakTeo.Tic();
-                //    break;
+                case 11:
+                    WindChill.Wind();
+                    break;
+                case 12:
+                   Gambler.Game();
+                    break;
+                case 13:
+                    Cupon_number.Cupon();
+                    break;
+                case 14:
+                    Stopwatchs.Stop();
+                    break;
+                case 15:
+                    TicTakTeo.Tic();
+                    break;
+                case 16:
+                    VendingMachine.Vending();
+                    break;
+                case 17:
+                    DaysOfWeek.Days();
+                    break;
+                case 18:
+                    TemperatureConversion.Temperature();
+                    break;
+                case 19:
+                    MonthlyPayment.Payment();
+                    break;
 
                 default:
                     break;

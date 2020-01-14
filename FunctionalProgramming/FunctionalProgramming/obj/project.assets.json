@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Neelabh\\Desktop\\FunctionalProgramming\\FunctionalProgramming\\FunctionalProgramming.csproj",
+      "projectUniqueName": "C:\\Users\\Neelabh\\Desktop\\GitHub\\FunctionalProgramming\\FunctionalProgramming\\FunctionalProgramming.csproj",
       "projectName": "FunctionalProgramming",
-      "projectPath": "C:\\Users\\Neelabh\\Desktop\\FunctionalProgramming\\FunctionalProgramming\\FunctionalProgramming.csproj",
+      "projectPath": "C:\\Users\\Neelabh\\Desktop\\GitHub\\FunctionalProgramming\\FunctionalProgramming\\FunctionalProgramming.csproj",
       "packagesPath": "C:\\Users\\Neelabh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Neelabh\\Desktop\\FunctionalProgramming\\FunctionalProgramming\\obj\\",
+      "outputPath": "C:\\Users\\Neelabh\\Desktop\\GitHub\\FunctionalProgramming\\FunctionalProgramming\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Neelabh\\AppData\\Roaming\\NuGet\\NuGet.Config",

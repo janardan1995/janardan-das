@@ -9,19 +9,18 @@ namespace FunctionalProgramming
     {
         public static void Leap()
         {
-            Console.Write("Enter the year");
-            int year = int.Parse(Console.ReadLine());
-            if(year>=1752 && year <= 9999)
+            Console.WriteLine("Enter the year");
+          int year= Utility.UtiliReadInt();
+
+            if (Utility.UtiliLeapYear(year) == true)
             {
-                if(year%4==0 || year%400==0 && year % 100 != 0)
-                {
-                    Console.Write("its a leap year ");
-                }
-                else
-                {
-                    Console.Write("Its not a leap year");
-                }
+                Console.WriteLine("its a leap year");
             }
-        }
+            else
+            {
+                Console.WriteLine("its not a leap year");
+            }         
+                     }           
     }
-}
+ }
+

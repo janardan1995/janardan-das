@@ -35,10 +35,8 @@ namespace FunctionalProgramming
             {
                 hour = 0;
             }
-            Console.WriteLine("time: {0}:{1}:{2}", hour, min, sec);
-          
-
-        }
+            Console.WriteLine("time: {0}:{1}:{2}", hour, min, sec);        
+            }
         }    
     }
 
