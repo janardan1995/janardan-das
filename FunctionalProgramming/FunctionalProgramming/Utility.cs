@@ -147,7 +147,43 @@ namespace FunctionalProgramming
             int m = month + 12 * ((14 - month) / 12) - 2;
             int d = (day + x + (31 * m) / 12) % 7;
             return d;
+        }
+        //Decimal to Binary
+        public static String DeciToBinary(int x)
+        {
+            String str = "";
+            while (x > 0)
+            {
+                int a = x % 2;
 
+                str = a + "" + str;
+                x = x / 2;
+
+            }
+            String s = str.ToString();
+            return s;
+
+        }
+        //binary to decimal
+        public static double BinaryToDeci(char[] arr)
+        {
+            Double sum = 0;
+            int len = arr.Length - 1;
+            for (int i = 0; i <= arr.Length - 1; i++)
+            {
+                if (arr[i] == '1')
+                {
+                    sum = sum + Math.Pow(2, len);
+
+                }
+                len = len - 1;
+            }
+            return sum;
+        }
+        //binary nibble
+        public static int SwapNibbles(int x)
+        {
+            return ((x & 0x0F) << 4 | (x & 0xF0) >> 4);
         }
     }
 }
