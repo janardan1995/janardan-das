@@ -62,4 +62,72 @@ namespace Algorithm
             return -1;
         }
     }
+    //
+    class MergeSortTest
+    {
+        int[] array;
+        int[] tempMargeArr;
+        int length;
+        public void Sort(int[] inputArr)
+        {
+            this.array = inputArr;
+            this.length = inputArr.Length;
+            this.tempMargeArr = new int[length];
+
+            DivideArray(0, length - 1);
+        }
+
+
+        public void DivideArray(int lowerIndex, int higherIndex)
+        {
+            if (lowerIndex < higherIndex)
+            {
+                int middle = lowerIndex + (higherIndex - lowerIndex) / 2;
+
+                //it will sort the left side of an arr
+                DivideArray(lowerIndex, middle);
+                //it will sort the right side of an arr
+                DivideArray(middle + 1, higherIndex);
+                // we have to marge the divide array
+                MergeArray(lowerIndex, middle, higherIndex);
+            }
+
+        }
+        public void MergeArray(int lowerIndex, int middle, int higherIndex)
+        {
+            
+
+            for (int a = lowerIndex; a <= higherIndex; a++)
+            {
+                tempMargeArr[a] = array[a];
+            }
+
+            int i = lowerIndex;
+            int j = middle + 1;
+            int k = lowerIndex;
+
+            while (i <= middle && j <= higherIndex)
+            {
+                if (tempMargeArr[i] <= tempMargeArr[j])
+                {
+                    array[k] = tempMargeArr[i];
+                    i++;
+
+                }
+                else
+                {
+                    array[k] = tempMargeArr[j];
+                    j++;
+                }
+                k++;
+            }
+            while (i <= middle)
+            {
+                array[k] = tempMargeArr[i];
+                k++;
+                i++;
+            }
+        }
+       
+    }
 }

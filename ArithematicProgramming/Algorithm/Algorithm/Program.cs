@@ -11,10 +11,10 @@ namespace Algorithm
 
             Console.WriteLine(" 1. All permutations of a String using iterative method and Recursion method");
             Console.WriteLine(" 2.Binary Search the Word from Word List");
-            //Console.WriteLine(" 3.Leap Year");
-            //Console.WriteLine(" 4.Harmonic Number ");
-            //Console.WriteLine(" 5.Power of 2");
-            //Console.WriteLine(" 6.Factors");
+            Console.WriteLine(" 3.Reads in strings and prints them in sorted order using insertion sort.");
+            Console.WriteLine(" 4.Reads in integers prints them in sorted order using Bubble Sort");
+            Console.WriteLine(" 5.Write a program to do Merge Sort of list of Strings.");
+            Console.WriteLine(" 6.ne string is an anagram of another if the second is simply a rearrangement of the first");
             //Console.WriteLine(" 7. 2D array");
             //Console.WriteLine(" 8. Sum of three Integer adds to ZERO");
             //Console.WriteLine(" 9.Euclidean distance from the point (x, y) to the origin (0, 0)");
@@ -43,13 +43,13 @@ namespace Algorithm
                 case 2:
                     BinarySearch.Binary();
                     break;
-                //case 3:
-                //    LeapYear.Leap();
-                //    break;
+                case 5:
+                    MergeSort.Merge1();
+                    break;
                 //case 4:
                 //    HarmonicNumber.Harmonic();
                 //    break;
-                //case 5:
+                //case 3:
                 //    PowerOf2.Power();
                 //    break;
                 //case 6:
