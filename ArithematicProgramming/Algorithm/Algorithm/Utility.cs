@@ -7,6 +7,14 @@ namespace Algorithm
 {
     class Utility
     {
+        //Calling a word from Scanner
+        public static String CallingAWord()
+        {
+            Console.WriteLine("enter the words ");
+           String x = Console.ReadLine();
+            return x;
+
+        }
         //permutation
         public static void Permutation(char[] ch, int currentIndex)
         {
@@ -115,7 +123,59 @@ namespace Algorithm
 
         }
     }
-}
+        //anagram
+        public static void AnagramTest(char[] first, char[] second)
+        {
+            int[] arr = new int[26];
+            for (int i = 0; i < 26; i++)
+            {
+                //initially i put 0 to all element
+                arr[i] = 0;
+            }
+
+            Console.WriteLine("......................................");
+            //first char arr
+            for (int i = 0; i < first.Length; i++)
+            {
+                if (first[i] >= 'a' && first[i] <= 'z')
+                {
+                    int x = first[i] - 'a';
+                    arr[x]++;
+                }
+                else if (first[i] >= 'A' && first[i] <= 'Z')
+                {
+                    int x = first[i] - 'A';
+                    arr[x]++;
+                }
+            }
+            //second char arr
+            for (int i = 0; i < second.Length; i++)
+            {
+                if (second[i] >='a' && second[i] <= 'z')
+                {
+                    int x = second[i] - 'a';                    
+                    arr[x]--;
+                }
+                else if(second[i] >= 'A' && second[i] <= 'Z')
+                {
+                    int x = second[i] - 'A';
+                    arr[x]--;
+                }
+            }
+            Console.WriteLine("......................................");
+            for (int i = 0; i < 26; i++)
+            {
+                if (arr[i] != 0)
+                {
+                    Console.WriteLine("Its not an anagram");
+                    Environment.Exit(0);
+                }
+
+            }
+            Console.WriteLine("Its an anagram");
+        }
+    }
+
     //merge sort...here i have made a class.
     class MergeSortTest
     {
