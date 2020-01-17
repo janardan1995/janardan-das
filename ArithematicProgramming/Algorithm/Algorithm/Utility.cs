@@ -64,9 +64,36 @@ namespace Algorithm
 
             return -1;
         }
-    
-    //insertion sort
-    public static void Insertion1(String[] str, int l)
+
+        //bubble sort
+        public static void Bubble1(int[] array)
+        {
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] = int.Parse(Console.ReadLine());
+            }
+            for (int j = 0; j < array.Length; j++)
+            {
+                for (int i = 0; i < array.Length - 1; i++)
+                {
+
+                    if (array[i] > array[i + 1])
+                    {
+                        int temp = array[i];
+                        array[i] = array[i + 1];
+                        array[i + 1] = temp;
+                    }
+                }
+            }
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine(array[i]);
+
+            }
+        }
+        //insertion sort
+        public static void Insertion1(String[] str, int l)
     {
         for (int i = 1; i < l; i++)
         {
