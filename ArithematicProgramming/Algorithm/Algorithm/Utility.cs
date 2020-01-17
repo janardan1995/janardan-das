@@ -11,7 +11,7 @@ namespace Algorithm
         public static String CallingAWord()
         {
             Console.WriteLine("enter the words ");
-           String x = Console.ReadLine();
+            String x = Console.ReadLine();
             return x;
 
         }
@@ -102,27 +102,27 @@ namespace Algorithm
         }
         //insertion sort
         public static void Insertion1(String[] str, int l)
-    {
-        for (int i = 1; i < l; i++)
         {
-            for (int j = 0; j < i; j++)
+            for (int i = 1; i < l; i++)
             {
-                if (str[i].CompareTo(str[j]) < 0)
+                for (int j = 0; j < i; j++)
                 {
-                    String temp = str[i];
-                    str[i] = str[j];
-                    str[j] = temp;
+                    if (str[i].CompareTo(str[j]) < 0)
+                    {
+                        String temp = str[i];
+                        str[i] = str[j];
+                        str[j] = temp;
+
+                    }
 
                 }
+            }
+            for (int i = 0; i < l; i++)
+            {
+                Console.WriteLine(str[i]);
 
             }
         }
-        for (int i = 0; i < l; i++)
-        {
-            Console.WriteLine(str[i]);
-
-        }
-    }
         //anagram
         public static void AnagramTest(char[] first, char[] second)
         {
@@ -151,12 +151,12 @@ namespace Algorithm
             //second char arr
             for (int i = 0; i < second.Length; i++)
             {
-                if (second[i] >='a' && second[i] <= 'z')
+                if (second[i] >= 'a' && second[i] <= 'z')
                 {
-                    int x = second[i] - 'a';                    
+                    int x = second[i] - 'a';
                     arr[x]--;
                 }
-                else if(second[i] >= 'A' && second[i] <= 'Z')
+                else if (second[i] >= 'A' && second[i] <= 'Z')
                 {
                     int x = second[i] - 'A';
                     arr[x]--;
@@ -173,6 +173,26 @@ namespace Algorithm
 
             }
             Console.WriteLine("Its an anagram");
+        }
+        //prime no.
+        public static void Prime(int x)
+        {
+            for (int i = 2; i < x; i++)
+            {
+                int count = 0;
+                for (int j = 1; j <= i; j++)
+                {
+
+                    if (i % j == 0)
+                    {
+                        count++;
+                    }
+                }
+                if (count == 2)
+                {
+                    Console.WriteLine(i);
+                }
+            }
         }
     }
 
