@@ -123,6 +123,51 @@ namespace Algorithm
 
             }
         }
+        //reverse of the no.
+        public static int Reverse(int i)
+        {
+            int sum = 0;
+            while (i > 0)
+            {
+                int x = i % 10;
+
+                sum = sum * 10 + x;
+                i = i / 10;
+            }
+            return sum;
+        }
+        //regex
+        public static bool isValidMobileNumber(String inputMobileNumber)
+        {
+            string strRegex = "[0-9]{10}";
+            Regex re = new Regex(strRegex);
+
+            if (re.IsMatch(inputMobileNumber))
+                return true;
+            else
+                return false;
+        }
+        public static bool isValidUserName(String inputUserName)
+        {
+            string strRegex = @"[a-z]{3,10}\s[a-z]{3}";
+            Regex re = new Regex(strRegex);
+
+            if (re.IsMatch(inputUserName))
+                return true;
+            else
+                return false;
+        }
+        public static bool isValidDOB(String inputUserName)
+        {
+            string strRegex = @"[0-9]{1}[1-2]{1}/[0-9]{1}[1-2]{1}/[1-2]{1}[0-9]{3}";
+            Regex re = new Regex(strRegex);
+
+            if (re.IsMatch(inputUserName))
+                return true;
+            else
+                return false;
+        }
+
         //anagram
         public static void AnagramTest(char[] first, char[] second)
         {
