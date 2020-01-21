@@ -11,6 +11,9 @@ namespace DataStructures
             switch (x)
             {
                 case 1:
+                    TryLinkedList.TRY();
+                    break;
+                case 2:
                     UnOrderedList.LinkList();
                     break;
                 default:
