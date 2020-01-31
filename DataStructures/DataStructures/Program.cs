@@ -7,7 +7,10 @@ namespace DataStructures
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("enter digits 1");
+            Console.WriteLine("Welcome to datastructure programming");
+            Console.WriteLine("1.Unorder list");
+            Console.WriteLine("2.Order list");
+            Console.WriteLine("3.Balanched parentheses");
             int x = int.Parse(Console.ReadLine());
             switch (x)
             {
@@ -16,6 +19,9 @@ namespace DataStructures
                     break;
                 case 2:
                     ListOrder.Order();
+                    break;
+                case 3:
+                    BalanchedParentheses.Parentheses();
                     break;
                
                 default:
