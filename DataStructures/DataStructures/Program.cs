@@ -14,6 +14,9 @@ namespace DataStructures
                 case 1:
                     Unorderlist.Unorder();
                     break;
+                case 2:
+                    ListOrder.Order();
+                    break;
                
                 default:
                     break;
