@@ -12,6 +12,7 @@ namespace DataStructures
             Console.WriteLine("2.Order list");
             Console.WriteLine("3.Balanched parentheses");
             Console.WriteLine("4.Banking cash counter program");
+            Console.WriteLine("5.Palindrom Checker");
             int x = int.Parse(Console.ReadLine());
             switch (x)
             {
@@ -26,6 +27,9 @@ namespace DataStructures
                     break;
                 case 4:
                     BankingCashCounter.Banking();
+                    break;
+                case 5:
+                    PalindromChecker.palindrome();
                     break;
                
                 default:

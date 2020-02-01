@@ -70,5 +70,17 @@ namespace DataStructures
             }
           
         }
+        public string AbstractFStack()
+        {
+            Node1 temp = head;
+            StringBuilder str = new StringBuilder();
+            while (temp != null)
+            {
+                str.Append(temp.data);
+                temp = temp.next;
+            }
+            string sb1 = str.ToString();
+            return sb1;
+        }
     }
 }
