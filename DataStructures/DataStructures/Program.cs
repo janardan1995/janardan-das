@@ -11,6 +11,7 @@ namespace DataStructures
             Console.WriteLine("1.Unorder list");
             Console.WriteLine("2.Order list");
             Console.WriteLine("3.Balanched parentheses");
+            Console.WriteLine("4.Banking cash counter program");
             int x = int.Parse(Console.ReadLine());
             switch (x)
             {
@@ -22,6 +23,9 @@ namespace DataStructures
                     break;
                 case 3:
                     BalanchedParentheses.Parentheses();
+                    break;
+                case 4:
+                    BankingCashCounter.Banking();
                     break;
                
                 default:
