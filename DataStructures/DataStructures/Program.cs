@@ -31,6 +31,9 @@ namespace DataStructures
                 case 5:
                     PalindromChecker.palindrome();
                     break;
+               case 6:
+                    New.New1();
+                    break;
                
                 default:
                     break;
