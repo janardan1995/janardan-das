@@ -13,6 +13,8 @@ namespace DataStructures
             Console.WriteLine("3.Balanched parentheses");
             Console.WriteLine("4.Banking cash counter program");
             Console.WriteLine("5.Palindrom Checker");
+            Console.WriteLine("6.Hashing");
+            Console.WriteLine("7.Prime no range");
             int x = int.Parse(Console.ReadLine());
             switch (x)
             {
@@ -32,7 +34,10 @@ namespace DataStructures
                     PalindromChecker.palindrome();
                     break;
                case 6:
-                    New.New1();
+                    Hashing.Hash();
+                    break;
+                case 7:
+                    PrimeNoRange.Prime();
                     break;
                
                 default:
