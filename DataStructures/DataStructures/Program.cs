@@ -15,6 +15,7 @@ namespace DataStructures
             Console.WriteLine("5.Palindrom Checker");
             Console.WriteLine("6.Hashing");
             Console.WriteLine("7.Prime no range");
+            Console.WriteLine("8.PrimeAnagram");
             int x = int.Parse(Console.ReadLine());
             switch (x)
             {
@@ -38,6 +39,9 @@ namespace DataStructures
                     break;
                 case 7:
                     PrimeNoRange.Prime();
+                    break;
+                case 8:
+                    PrimeAnagram1.PA();
                     break;
                
                 default:
